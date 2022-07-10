@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin')
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 const ImageminMozjpeg = require('imagemin-mozjpeg')
@@ -40,6 +41,25 @@ module.exports = {
           globOptions: {
             ignore: ['**/images/**']
           }
+        }
+      ]
+    }),
+    new WebpackPwaManifest({
+      filename: 'manifest.json',
+      name: 'Resto Finder',
+      short_name: 'Resto App',
+      display: 'standalone',
+      description: 'Free Catalogue Restaurant for you',
+      start_url: '/index.html',
+      background_color: '#ffffff',
+      theme_color: '#3e4344',
+      crossorigin: 'use-credentials',
+      icons: [
+        {
+          src: path.resolve('src/public/icons/icon.png'),
+          destination: path.join('icons'),
+          sizes: [96, 128, 144, 192, 256, 384, 512],
+          purpose: 'any maskable'
         }
       ]
     }),

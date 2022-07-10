@@ -3,17 +3,16 @@ var serviceWorkerOption = {
     "/0.bundle.js",
     "/1.bundle.js",
     "/bundle.js",
-    "/favicon.png",
+    "/icons/icon.png",
+    "/index.html",
     "/manifest.json",
-    "/icons/icon-128x128.png",
-    "/icons/icon-144x144.png",
-    "/icons/icon-152x152.png",
-    "/icons/icon-192x192.png",
-    "/icons/icon-384x384.png",
-    "/icons/icon-512x512.png",
-    "/icons/icon-72x72.png",
-    "/icons/icon-96x96.png",
-    "/index.html"
+    "/icons/icon_512x512.de5e746d9ab3026085e4c763d293f50c.png",
+    "/icons/icon_384x384.0c65b52314bfd2b90b99302a914f9fa4.png",
+    "/icons/icon_256x256.0a03ac5e8167da5394901d5b4b139f0b.png",
+    "/icons/icon_192x192.faf1155bda4c2d01f42a61fe89dd1c81.png",
+    "/icons/icon_144x144.e384465e1b9f9ee2b8b32f41bc6528e6.png",
+    "/icons/icon_128x128.19f3b06531e8f68b4a72da038e087884.png",
+    "/icons/icon_96x96.b0da499542ce3e11a816aced014634c9.png"
   ]
 };
         

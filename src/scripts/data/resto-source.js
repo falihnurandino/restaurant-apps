@@ -13,6 +13,12 @@ class RestaurantSource {
     return responseJson.restaurant
   }
 
+  static async getListFood () {
+    const response = await fetch(API_ENDPOINT.MEAL)
+    const responseJson = await response.json()
+    return responseJson.meals
+  }
+
   static async postRestaurantReview (review) {
     const response = await fetch(API_ENDPOINT.REVIEW, {
       method: 'POST',

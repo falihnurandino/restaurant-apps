@@ -68,10 +68,16 @@ const createRestoDetailTemplate = (data) => `
           <p class="review-date">${review.date}</p>
         </div>`).join('')}
       </div>      
-    </div>
-   
+    </div>  
 `
-
+const createMealItemTemplate = (meal) => `
+<div class="food" tabindex="0">
+    <img class="lazyload food-img" src="/icons/placeholder.png" data-src="${meal.strMealThumb}" alt="${meal.strMeal} Image" />
+    <div class="food-title">
+      <p>${meal.strMeal}</p>
+    </div>
+  </div>
+`
 const createFormReviewTemplate = () => `
   <form>
     <label for="inputName">Name</label>
@@ -99,5 +105,6 @@ export {
   createRestoDetailTemplate,
   createFormReviewTemplate,
   createLikeButtonTemplate,
-  createLikedButtonTemplate
+  createLikedButtonTemplate,
+  createMealItemTemplate
 }

@@ -101,7 +101,8 @@
       url('/images/hero-large.webp');
   }
 
-  .katalog-resto {
+  .katalog-resto,
+  #food-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
